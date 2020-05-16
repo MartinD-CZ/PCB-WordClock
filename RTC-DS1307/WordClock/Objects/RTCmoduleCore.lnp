@@ -1,0 +1,14 @@
+--cpu Cortex-M0
+".\objects\main.o"
+".\objects\delay.o"
+".\objects\init.o"
+".\objects\ds1307.o"
+".\objects\i2c.o"
+".\objects\spi.o"
+".\objects\uart.o"
+".\objects\startup_stm32f030x6.o"
+".\objects\system_stm32f0xx.o"
+--strict --scatter ".\Objects\RTCmoduleCore.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\RTCmoduleCore.map" -o .\Objects\RTCmoduleCore.axf
